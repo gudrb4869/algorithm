@@ -1,0 +1,6 @@
+n = int(input())
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+a.sort(reverse=True)
+b.sort()
+print(sum(e[0]*e[1] for e in zip(a, b)))
