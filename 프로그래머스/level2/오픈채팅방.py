@@ -5,6 +5,7 @@ def solution(record):
     dic = defaultdict(str)
     message = {'Enter' : '님이 들어왔습니다.',
               'Leave' : '님이 나갔습니다.'}
+              
     for r in record:
         lst = r.split()
         if lst[0] in ['Enter', 'Change']:
