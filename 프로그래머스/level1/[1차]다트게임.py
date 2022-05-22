@@ -2,6 +2,7 @@ def solution(dartResult):
     answer = 0
     lst = []
     val = ''
+    
     for d in dartResult:
         if d >= '0' and d <= '9':
             val += d
