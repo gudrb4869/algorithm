@@ -5,9 +5,9 @@ def solution(people, limit):
     q = deque(sorted(people))
     
     while q:
-        total = q.pop()
-        while q and q[0] + total <= limit:
-            total += q.popleft()
+        cur = q.pop()
+        if q and q[0] + cur <= limit:
+            q.popleft()
         answer += 1
         
     return answer
