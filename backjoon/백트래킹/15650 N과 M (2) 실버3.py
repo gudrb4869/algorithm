@@ -1,12 +1,12 @@
-# from itertools import permutations
+# from itertools import combinations
 # n, m = map(int, input().split())
 # nums = [i for i in range(1, n + 1)]
-# for result in list(permutations(nums, m)):
+# for result in list(combinations(nums, m)):
 #     print(*result)
 
 def promising(x):
     for i in range(1, x):
-        if nums[i] == nums[x]:
+        if nums[i] >= nums[x]:
             return False
     return True
 
