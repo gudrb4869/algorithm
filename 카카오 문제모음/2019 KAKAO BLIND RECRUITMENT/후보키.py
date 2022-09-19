@@ -2,7 +2,6 @@ from itertools import combinations
 
 def solution(relation):
     r, c = len(relation), len(relation[0])
-    num = set()
     answer = []
     for k in range(c):
         for comb in list(combinations([k for k in range(c)], k + 1)):
